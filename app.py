@@ -33,8 +33,8 @@ def chat(user_input):
     
     outputs = model.generate(
         input_ids=input_ids,
-        max_new_tokens=200,  # Increased from 80 to 200
-        use_cache=False,  # Disabled cache to avoid early stopping
+        max_new_tokens=200, 
+        use_cache=False,
         pad_token_id=tokenizer.eos_token_id,
     )
     
