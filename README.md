@@ -36,10 +36,28 @@ This repository provides an easy way to deploy Unsloth bnb-4bit models. However,
 
 ### 2. Clone the Repository & Upload Files
 1. Clone this GitHub repository to your local machine:
-   ```bash
+```bash   
    git clone https://github.com/MuhammadSheesShoaib/Deploy-Unsloth-bnb-4-bit-Text-Generation-Models-on-Hugging-Face-Spaces-using-Gradio.git
-bash```
-Navigate into the cloned repository:
-```bash
-  cd Deploy-Unsloth-bnb-4-bit-Text-Generation-Models-on-Hugging-Face-Spaces-using-Gradio
 ```
+### 3. Deploy Your Model
+1. Upload the required files to your Hugging Face Space.  
+
+2. Go to **Settings** on your Hugging Face Space.  
+
+3. Find **Restart Session** and restart the session.  
+
+4. Your model is now deploying.
+
+### 4. Test & Use Your Model
+After deployment, you can test the model directly on Hugging Face Spaces.  
+
+To use it through the API:  
+
+1. Click **Use via API**.  
+2. Follow the instructions to run it locally using the API.  
+3. If the model requires an HF token, use:  
+
+```python
+   from gradio_client import Client
+   client = Client("api_url", hf_token=HF_TOKEN)
+```  
