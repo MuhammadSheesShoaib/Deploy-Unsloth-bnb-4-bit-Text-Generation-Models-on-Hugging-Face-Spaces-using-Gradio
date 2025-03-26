@@ -59,5 +59,5 @@ To use it through the API:
 
 ```python
    from gradio_client import Client
-   client = Client("api_url", hf_token=HF_TOKEN)
+   client = Client("api_url", hf_token="your hf read token")
 ```  
